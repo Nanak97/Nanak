@@ -1,0 +1,508 @@
+:root {
+    --c1: #CBD5D1;
+    --c2: #68DBAD;
+    --c3: #2BA674;
+    --c4: #00613A;
+    --c5: #053320;
+    --c6: #AA8739;
+    --c7: #F5FDFA;
+    --c8: #737373;
+
+}
+
+@font-face {
+    font-family: Permanent_Marker;
+    src: url(/fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bree_Serif;
+    src: url(/fonts/Bree_Serif/BreeSerif-Regular.ttf);
+}
+
+header {
+    background-color: var(--c1);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    opacity: 1;
+}
+
+body {
+    margin: 0;
+    background-color: var(--c7);
+    font-family: Bree_Serif;
+}
+
+.index-body {
+    background-image: url(../img/pag.images/body.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    font: bold italic 40px permanent_marker, cursive;
+    color: var(--c2);
+}
+
+.menu {
+    text-align: center;
+    font: bold 22px Times New Roman, cursive;
+    color: var(--c2);
+}
+
+.menu li {
+    display: inline;
+    margin: 5px;
+    padding: 3px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0 5px;
+    padding: 0;
+    height: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 10px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+.menu a:hover {
+    background-color: var(--c3);
+    color: var(--c2);
+}
+
+.menu-ul .active:hover {
+    color: var(--c2);
+    background-color: var(--c5);
+}
+
+.menu .active {
+    color: var(--c4);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.images img {
+    width: 250px;
+    height: 250px;
+}
+
+.index-main {
+    background-color: var(--c3);
+    border-radius: 10px;
+    margin: 120px auto;
+    width: 75%;
+    opacity: 0.8;
+}
+
+footer {
+    position: fixed;
+    font: bold 18px "Times New Roman";
+    bottom: 0;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: var(--c1);
+    color: var(--c4);
+}
+
+footer li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    z-index: 15px;
+}
+
+.slider-animation {
+    position: absolute;
+    width: 750px;
+    height: 250px;
+    animation: slider 8s linear infinite;
+}
+
+.images {
+    float: left;
+}
+
+@keyframes slider {
+    0%  { left: 0; }
+    16% { left: 0;}
+    33% { left: -250px;}
+    49% { left: -250px;}
+    66% { left: -500px;}
+    82% { left: -500px;}
+    100% { left: -750px;}
+}
+
+.information {
+    width: 85%;
+    margin: auto;
+    text-align: justify;
+    color: white;
+    padding-bottom: 50px;
+}
+
+/* De aranjat in pagina index "BARCELONA" */
+
+.barcelona {
+    text-indent: 15px;
+}
+
+.information h3 {
+    color: #053320;
+}
+
+.city-global {
+    margin: 200px auto;
+    width: 70%;
+    border: 2px solid var(--c1);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: linear-gradient(to top right, var(--c1) 45%, var(--c8));
+    box-shadow: 5px 5px var(--c1);
+}
+.clt {
+    border: 1px solid var(--c1);
+    width: 320px;
+    height: 350px;
+    margin: 40px;
+    background: linear-gradient(to bottom left, var(--c2) 45%, var(--c3) 80%);
+    box-shadow: 10px 10px 15px var(--c5);
+    border-radius: 10px;
+}
+
+.clt:hover {
+    box-shadow: -10px -10px 15px var(--c5);
+}
+.slider-clt {
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 198px;
+    height: 150px;
+}
+
+.imgs-clt:hover {
+    position: absolute;
+    width: calc(198px * 4);
+    height: 150px;
+    animation: move-clt 5s ease-in-out infinite;
+}
+.clt img {
+    width: 198px;
+    height: 150px;
+    float: left;
+}
+
+@keyframes move-clt {
+    0% {left: 0px;}
+    12% {left: 0px;}
+    25% {left: -198px;}
+    37% {left: -198px;}
+    50% {left: -396px;}
+    62% {left: -396px;}
+    75% {left: -594px;}
+    87% {left: -594px;}
+    100% {left: -792px;}
+}
+
+.clt h3 {
+    text-align: center;
+    color: #AA8739;
+    
+}
+
+.clt li {
+    font-size: 18px;
+    text-indent: 15px;
+    list-style-type: "\26ac";
+}
+
+.table {
+    display: table;
+    width: 80%;
+    height: 800px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: 190px;
+}
+
+.title-table a{
+    font: bold 25px Times New Roman;
+    color: var(--c6);
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.title-table {
+    margin-bottom: 10px;
+}
+
+table,
+tr,
+th,
+td {
+    border: 2px solid var(--c5);
+    border-collapse: collapse;
+    font: 16px Bree_Serif, cursive;
+    margin: 0;
+    padding: 0;
+}
+
+/* de schimbat font tabel + title-table */
+
+tr td {
+    height: 160px;
+}
+
+th,
+tfoot,
+tfoot td {
+    height: 50px;
+    font-weight: bold;
+    background-color: #00613A;
+    color: rgb(236, 236, 236);
+}
+
+td:first-child {
+    width: 50px;
+}
+
+td:nth-child(2) {
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+td:nth-child(3) {
+    width: 250px;
+}
+
+td:nth-child(4) {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+td:last-child {
+    width: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.img1 {
+     background-image: url(../img/barcelona.jpg);
+     background-size: 256px 182px;
+}
+
+.img2 {
+    background-image: url(../img/lisbo.jpg);
+    background-size: 256px 182px;
+}
+
+.img3 {
+    background-image: url(../img/budapest.jpg);
+    background-size: 256px 182px;
+}
+
+.img4 {
+    background-image: url(../img/berlin.jpg);
+    background-size: 256px 182px;
+}
+
+.img5 {
+    background-image: url(../img/paris.jpg);
+    background-size: 256px 182px;
+}
+
+.img6 {
+    background-image: url(../img/londra.jpg);
+    background-size: 256px 182px;
+}
+
+tbody {
+    counter-reset: nr;
+}
+
+tbody tr {
+    counter-increment: nr;
+}
+
+tbody td:first-child::before {
+    content: counter(nr)".";
+}
+
+tbody td:first-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: var(--c1);
+}
+
+tbody tr:nth-child(even) {
+    background-color:var(--c3);
+}
+
+tbody td:last-child:hover {
+    background-color: var(--c5);
+}
+
+tfoot td:first-child {
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 35px;
+}
+
+tbody a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#p1,
+#p2,
+#p3,
+#p4,
+#p5 {
+    opacity: 0;
+}
+
+.main-contact {
+    position: relative;
+    margin: 150px auto;
+    width: 80%;
+}
+
+.contact {
+    position: relative;
+    text-align: center;
+}
+
+.contact-fb,
+.contact-wp,
+.contact-gm {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font: bold italic 15px Arial;
+    cursor: pointer;
+}
+
+.facebook {
+    color: blue;}
+
+.whatsapp {
+    color: green;
+}
+
+.gmail {
+    color: red;
+}
+
+.cont {
+    display: none;
+}
+
+.contact-fb:hover {
+    transform: scale(1.5);
+    background-color: grey;
+    border-radius: 30px;
+}
+
+.contact-wp:hover {
+    transform: scale(1.5);
+    background-color: grey;
+    border-radius: 30px;
+}
+
+.contact-gm:hover {
+    transform: scale(1.5);
+    background-color: grey;
+    border-radius: 30px;
+}
+
+.contact-fb:hover .cont,
+.contact-gm:hover .cont,
+.contact-wp:hover .cont {
+    display: block;
+}
+
+.cont a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-global {
+    display: grid;
+    grid-template-columns: repeat(2, 65px) 1fr;
+    grid-template-rows: repeat(5, 35px) auto repeat(2, 36px) ;
+    gap: 10px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.contact-global label {
+    grid-column-start: 1;
+    margin-top: 5px;
+}
+.contact-global input {
+    grid-column-start: 2;
+    grid-column: 2 / -1;
+    padding: 5px;
+}
+
+.contact-global textarea {
+    grid-column: 2 / -1;
+    padding: 5px;
+}
+.button1 {
+    grid-column-start: 2;
+    width: 65px;
+}
+
+.button2 {
+    width: 85px;
+    background-color: rgb(224, 171, 171);
+}
+
+.button1:hover {
+    color: white;
+    background-color: var(--c2);
+}
+
+.button2:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.button {
+    text-align: center;
+    font-weight: bold;
+}

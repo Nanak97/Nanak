@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">
+    <meta name="description" content="Project HTML & CSS">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Ionut Hontaru">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+
+    <title>Table</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Curs HTML</div>
+        <nav class="menu">
+            <ul class="menu-ul">
+                <li>
+                    <a href="/index.html">
+                        <i class="fas fa-home"></i> Acasa
+                    </a>
+                </li>
+                <li>
+                    <a href="/images.html">
+                        <i class="fas fa-image"></i> Atractii turistice
+                    </a>
+                </li>
+                <li>
+                    <a href="/table.html" class="active">
+                        <i class="fas fa-table"></i> Sejur
+                    </a>
+                </li>
+                <li>
+                    <a href="/contact.html">
+                        <i class="fas fa-address-card"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table class="table">
+            <caption class="title-table">
+                <a href="https://aventurescu.ro/top-10-orase-europene-pe-care-le-am-vizitat-cu-un-buget-mic/">Sejur capitale europene</a>
+            </caption>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Destinatie</th>
+                    <th>Imagine</th>
+                    <th>Descriere</th>
+                    <th>Pret/noapte <br> (in medie)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>Barcelona</td>
+                    <td class="img1"></td>
+                    <td>
+                        Barcelona este un oraș uimitor cu deschidere la mare 
+                        care își prezintă frumusețea și stilul de viață 
+                        însorit. Peisajele superbe, arhitectura uluitoare și 
+                        atracțiile culturale superbe fac din Barcelona o 
+                        destinație atrăgătoare. Desigur, clima mediteraneană 
+                        plăcută adaugă un farmec aparte acestui oraș.
+                        Basílica Sagrada Família se află în partea de nord a 
+                        orașului, dominând împrejurimile sale cu cele 18 
+                        turnuri care se ridică deasupra tuturor celorlalte 
+                        clădiri.
+                        Podul Vasco da Gama cu o lungime de 12,3 km, este cel
+                        mai lung pod din Europa, construcția este un pod 
+                        suspendat care traversează râul Tagus și a fost numit 
+                        în cinstea exploratorului Vasco da Gama. 
+                    </td>
+                    <td>
+                        <label>
+                            <input type="radio" class="hid" name="1">
+                            <a href="#p1"> 160&euro;</a>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lisabona</td>
+                    <td class="img2"></td>
+                    <td>
+                        Lisabona, considerată una dintre cele mai frumoase 
+                        capitale europene, este un oraș cu un farmec propriu și 
+                        un amestec de stiluri arhitecturale.
+                        Turnul Belem,  construit pe o insulă de pe râul Tagus 
+                        (Tejo), în zona cu acelaşi nume a oraşului Lisabona, 
+                        este unul dintre cele mai simbolice edificii din 
+                        Lisabona, făcând parte din Patrimoniul Mondial UNESCO.
+                        Palatul este situat în Benfica, în partea de nord-vest 
+                        a orașului. A fost construită în 1640 și este încă una 
+                        dintre cele mai frumoase reședințe din Lisabona, cu 
+                        plăci decorative din secolele XVII și XVIII, panouri cu 
+                        fresce și picturi în ulei, redând episoade religioase, 
+                        cadre de pe câmpul de bătălie și scene de vânătoare.
+                    </td>
+                    <td><a href="#p2">120&euro;</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Budapesta</td>
+                    <td class="img3"></td>
+                    <td>
+                        Sunt nouă poduri peste Dunăre, în total, Budapesta 
+                        fiind cunoscută și sub denumirea de Capitala celor 9 
+                        Poduri. Acestea sunt: Podul Árpád, Podul cu Lanțuri, 
+                        Podul Elisabeta, Podul Libertății, Podul Margareta, 
+                        Podul Megyeri, Podul Petőfi, Podul Rákóczi și Podul 
+                        Feroviar de Nord.
+                        Bazilica Sfântul Ștefan este cea mai importantă 
+                        biserică din toată Ungaria, întrucât aici se găsește 
+                        brațul drept al regelui Ștefan cel Sfânt, fondatorul 
+                        statului ungar. Intrarea în biserică este gratuită, iar 
+                        cea mai apropiată stație de metrou este 
+                        Bajcsy-Zsilinszky út.
+                    </td>
+                    <td><a href="#p3">60&euro;</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Berlin</td>
+                    <td class="img4"></td>
+                    <td>
+                        Zidul Berlinului este unul din simbolurile orașului, 
+                        iar partea lui de est rămâne una dintre cele mai 
+                        căutate atracții turistice.
+                        De Checkpoint Charlie e legat un eveniment despre care 
+                        se spune că ar fi putut transforma Războiul Rece în cel 
+                        de-al treilea Război Mondial. Aici a avut loc cunoscuta 
+                        confruntare a tancurilor, când armata americană și cea 
+                        sovietică s-au aflat la un pas de a folosi armele.
+                        Poarta Brandenburg este astăzi simbolul unificării și 
+                        al păcii. E locul în care mii de oameni au sărbătorit 
+                        în noiembrie 1989 căderea zidului și reîntregirea 
+                        Berlinului.
+                    </td>
+                    <td><a href="#p4">110&euro;</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Paris</td>
+                    <td class="img5"></td>
+                    <td>
+                        Parisul este o destinație de vis pitorească. Răspândită 
+                        pe malurile râului Seinei în nordul Franței, se remarcă 
+                        că este una dintre acele metropole extravagante ale 
+                        lumii.
+                        Turnul Eiffel a fost ridicat cu ocazia Expozitiei 
+                        Universale din 1889, organizata la Paris pentru 
+                        celebrarea centenarului Revolutiei Franceze din 1789, 
+                        eveniment ce a marcat istoria Europei in mod 
+                        fundamental.
+                        Muzeul Louvre este cel mai vizitat și mai popular muzeu 
+                        de artă și galerie din întreaga lume. Este, de 
+                        asemenea, printre cele mai frumoase locuri de vizitat 
+                        în Paris. 
+                    </td>
+                    <td><a href="#p5">100&euro;</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Londra</td>
+                    <td class="img6"></td>
+                    <td>Atragand 27 de milioane de vizitatori in fiecare an, 
+                        Londra este cel mai vizitat oras din Europa. Nu este de 
+                        mirare ca Londra este in topul preferintelor de 
+                        calatorie ale oamenilor: orasul a fost fondat de romani 
+                        si a prosperat de-a lungul secolelor.
+                        City of London este centrul vechi al Londrei, dar este 
+                        de fapt cel mai mic oras din Anglia. Londra cu care 
+                        suntem familiarizati acopera o zona metropolitana mult 
+                        mai larga si gazduieste aproape 9 milioane de oameni.
+                        Impartita in zone vibrante si distincte cum ar fi 
+                        nordul, vestul, sudul si estul Londrei precum si 
+                        centrul comercial si turistic al Londrei Centrale
+                        fiecare district are propriile cartiere si zone aparte. 
+                        Intotdeauna este ceva de facut si de vizitat la Londra.
+                    </td>
+                    <td><a href="#p5">130&euro;</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total 2 nopti:</td>
+                    <td>
+                        <div id="p1">320&euro;</div>
+                        <div id="p2">240&euro;</div>
+                        <div id="p3">120&euro;</div>
+                        <div id="p4">220&euro;</div>
+                        <div id="p5">200&euro;</div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+<footer>
+    <ul class="footer">    
+        <li>
+            <span class="name"> Ionut </span>
+            <span class="surname"> Hontaru </span>
+            <span class="nameclass"> HTML P02 - 01 Mar 2022 </span>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>
