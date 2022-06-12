@@ -55,6 +55,7 @@ body {
 }
 
 .menu li {
+    position: relative;
     display: inline;
     margin: 5px;
     padding: 3px;
@@ -70,7 +71,6 @@ body {
 .menu a {
     text-decoration: none;
     color: inherit;
-    margin: 0 10px;
     padding: 3px;
     border-radius: 5px;
 }
@@ -89,7 +89,6 @@ body {
 .menu .active {
     color: var(--c4);
     border-radius: 5px;
-    padding: 3px;
 }
 
 .images img {
