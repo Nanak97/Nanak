@@ -5,7 +5,7 @@
     --c4: #00613A;
     --c5: #053320;
     --c6: #AA8739;
-    --c7: #F5FDFA;
+    --c7: #d5e7e0;
     --c8: #737373;
 
 }
@@ -125,6 +125,7 @@ footer li {
 .slider {
     position: relative;
     overflow: hidden;
+    border-radius: 50%;
     width: 250px;
     height: 250px;
     margin: auto;
@@ -133,9 +134,11 @@ footer li {
 
 .slider-animation {
     position: absolute;
-    width: 750px;
+    margin: auto;
+    padding: 0;
+    width: 1750px;
     height: 250px;
-    animation: slider 8s linear infinite;
+    animation: slider 10s linear infinite;
 }
 
 .images {
@@ -143,13 +146,19 @@ footer li {
 }
 
 @keyframes slider {
-    0%  { left: 0; }
-    16% { left: 0;}
-    33% { left: -250px;}
-    49% { left: -250px;}
-    66% { left: -500px;}
-    82% { left: -500px;}
-    100% { left: -750px;}
+    0% {left: 0;}
+    8.3% {left: 0;}
+    16.7% {left: -250px;}
+    25% {left: -250px;}
+    33.4% {left: -500px;}
+    41.7% {left: -500px;}
+    50.1% {left: -750px;}
+    58.4% {left: -750px;}
+    66.8% {left: -1000px;}
+    75.1% {left: -1000px;}
+    83.5% {left: -1250px;}
+    91.8% {left: -1250px;}
+    100% {left: -1500px;}
 }
 
 .information {
@@ -160,10 +169,8 @@ footer li {
     padding-bottom: 50px;
 }
 
-/* De aranjat in pagina index "BARCELONA" */
-
-.barcelona {
-    text-indent: 15px;
+.information div {
+    text-indent: 40px;
 }
 
 .information h3 {
@@ -206,7 +213,7 @@ footer li {
 
 .imgs-clt:hover {
     position: absolute;
-    width: calc(198px * 4);
+    width: calc(198px * 5);
     height: 150px;
     animation: move-clt 5s ease-in-out infinite;
 }
@@ -309,10 +316,14 @@ td:nth-child(4) {
 }
 
 td:last-child {
-    width: 100px;
+    width: 160px;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
+}
+
+tfoot td:last-child {
+    font-size: 17px;
 }
 
 .img1 {
@@ -371,10 +382,6 @@ tbody tr:nth-child(even) {
     background-color:var(--c3);
 }
 
-tbody td:last-child:hover {
-    background-color: var(--c5);
-}
-
 tfoot td:first-child {
     font-size: 20px;
     text-align: right;
@@ -385,14 +392,6 @@ tfoot td:first-child {
 tbody a {
     text-decoration: none;
     color: inherit;
-}
-
-#p1,
-#p2,
-#p3,
-#p4,
-#p5 {
-    opacity: 0;
 }
 
 .main-contact {
@@ -433,19 +432,19 @@ tbody a {
 
 .contact-fb:hover {
     transform: scale(1.5);
-    background-color: grey;
+    background-color: rgb(105, 118, 194);
     border-radius: 30px;
 }
 
 .contact-wp:hover {
     transform: scale(1.5);
-    background-color: grey;
+    background-color: rgb(88, 138, 88);
     border-radius: 30px;
 }
 
 .contact-gm:hover {
     transform: scale(1.5);
-    background-color: grey;
+    background-color: rgb(160, 91, 91);
     border-radius: 30px;
 }
 
@@ -462,7 +461,7 @@ tbody a {
 
 .contact-global {
     display: grid;
-    grid-template-columns: repeat(2, 65px) 1fr;
+    grid-template-columns: repeat(2, 70px) 1fr;
     grid-template-rows: repeat(5, 35px) auto repeat(2, 36px) ;
     gap: 10px;
     font-weight: bold;
@@ -505,4 +504,14 @@ tbody a {
 .button {
     text-align: center;
     font-weight: bold;
+}
+
+.input-req::after {
+    content: " *";
+    color: red;
+}
+
+input:hover,
+textarea:hover {
+    background-color: rgb(190, 190, 190);
 }

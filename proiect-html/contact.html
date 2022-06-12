@@ -10,13 +10,13 @@
     
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="icon" href="img/icon.ico">
+    <link rel="icon" href="img/travel.png">
 
     <title>Contact</title>
 </head>
 <body>
     <header>
-        <div class="logo">Curs HTML</div>
+        <div class="logo">Curs HTML & CSS</div>
         <nav class="menu">
             <ul class="menu-ul">
                 <li>
@@ -68,21 +68,21 @@
         </div>
     </div>
 
-    <form class="contact-global">
-            <label for="name">Nume:</label>
-            <input type="text">
-            <label for="email">Email:</label>
-            <input type="email">
+    <form class="contact-global" method="post">
+            <label class="input-req" for="name">Nume:</label>
+            <input type="text" name="name" id="name" placeholder="Popescu Ion" required>
+            <label class="input-req" for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="popescuion@gmail.com" required>
             <label for="phone">Telefon:</label>
-            <input type="text">
-            <label for="age">Varsta:</label>
-            <input type="number">
-            <label for="city">Oras:</label>
-            <input type="text">
-            <label for="text">Text:</label>
-            <textarea name="" id="" cols="30" rows="6"></textarea>
-            <button class="button button1">Trimite</button>
-            <button class="button button2">Reseteaza</button>
+            <input type="number" name="phone" id="phone" placeholder="07xxxxxxxx">
+            <label for="age">Vârstă:</label>
+            <input type="number" name="age" id="age" placeholder="24">
+            <label class="input-req" for="city">Oraș:</label>
+            <input type="text" name="city" id="city" placeholder="Galați">
+            <label class="input-req" for="text">Text:</label>
+            <textarea name="text" id="text" cols="30" rows="6" placeholder="Aici poți scrie mesajul" required minlength="10"></textarea>
+            <button class="button button1" type="submit">Trimite</button>
+            <button class="button button2" type="reset">Reseteaza</button>
     </form>
 </main>
 <footer>
