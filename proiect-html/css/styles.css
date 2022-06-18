@@ -11,13 +11,13 @@
 }
 
 @font-face {
-    font-family: Permanent_Marker;
-    src: url(/fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+    font-family: 'Permanent_Marker';
+    src: url(../fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
 }
 
 @font-face {
-    font-family: Bree_Serif;
-    src: url(/fonts/Bree_Serif/BreeSerif-Regular.ttf);
+    font-family: 'Bree_Serif';
+    src: url(../fonts/Bree_Serif/BreeSerif-Regular.ttf);
 }
 
 header {
@@ -34,7 +34,7 @@ header {
 body {
     margin: 0;
     background-color: var(--c7);
-    font-family: Bree_Serif;
+    font-family: 'Bree_Serif', "Arial", cursive;
 }
 
 .index-body {
@@ -45,7 +45,8 @@ body {
 
 .logo {
     font: bold italic 40px permanent_marker, cursive;
-    color: var(--c2);
+    color: var(--c4);
+    text-transform: uppercase;
 }
 
 .menu {
@@ -101,10 +102,13 @@ body {
     border-radius: 10px;
     margin: 120px auto;
     width: 75%;
+    height: 650px;
     opacity: 0.8;
+    z-index: 10;
 }
 
 footer {
+    display: block;
     position: fixed;
     font: bold 18px "Times New Roman";
     bottom: 0;
@@ -137,7 +141,7 @@ footer li {
     padding: 0;
     width: 1750px;
     height: 250px;
-    animation: slider 10s linear infinite;
+    animation: slider 20s linear infinite;
 }
 
 .images {
@@ -168,9 +172,9 @@ footer li {
     padding-bottom: 50px;
 }
 
-.information div {
+.indent {
     text-indent: 40px;
-}
+} 
 
 .information h3 {
     color: #053320;
@@ -277,8 +281,6 @@ td {
     padding: 0;
 }
 
-/* de schimbat font tabel + title-table */
-
 tr td {
     height: 160px;
 }
@@ -326,32 +328,32 @@ tfoot td:last-child {
 }
 
 .img1 {
-     background-image: url(../img/barcelona.jpg);
+     background-image: url(../img/pag.index/barcelona.jpg);
      background-size: 256px 182px;
 }
 
 .img2 {
-    background-image: url(../img/lisbo.jpg);
+    background-image: url(../img/pag.index/lisabona.jpg);
     background-size: 256px 182px;
 }
 
 .img3 {
-    background-image: url(../img/budapest.jpg);
+    background-image: url(../img/pag.index/budapesta.jpg);
     background-size: 256px 182px;
 }
 
 .img4 {
-    background-image: url(../img/berlin.jpg);
+    background-image: url(../img/pag.index/berlin.jpg);
     background-size: 256px 182px;
 }
 
 .img5 {
-    background-image: url(../img/paris.jpg);
+    background-image: url(../img/pag.index/paris.jpg);
     background-size: 256px 182px;
 }
 
 .img6 {
-    background-image: url(../img/londra.jpg);
+    background-image: url(../img/pag.index/londra.jpg);
     background-size: 256px 182px;
 }
 
@@ -430,19 +432,19 @@ tbody a {
 }
 
 .contact-fb:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
     background-color: rgb(105, 118, 194);
     border-radius: 30px;
 }
 
 .contact-wp:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
     background-color: rgb(88, 138, 88);
     border-radius: 30px;
 }
 
 .contact-gm:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
     background-color: rgb(160, 91, 91);
     border-radius: 30px;
 }
@@ -513,4 +515,144 @@ tbody a {
 input:hover,
 textarea:hover {
     background-color: rgb(190, 190, 190);
+}
+
+
+.information {
+    list-style-type: none;
+    height: 310px;
+    position: relative;
+    border: 2px solid var(--c4);
+    padding: 10px;
+}
+
+.li-city {
+    display: inline-block;
+    border: 2px solid var(--c1);
+    background-color: var(--c4);
+}
+
+.label-city {
+    display: block;
+    padding: 10px;
+}
+
+.label-city:hover {
+    background-color: var(--c1);
+    color: var(--c4);
+    border: 2px solid var(--c4);
+}
+
+.input-city:checked ~ .label-city{
+    background-color: var(--c5);
+    color: #fff;
+}
+
+.index-city {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    padding: 10px;
+    display: none;
+    margin-top: 45px;
+}
+
+.label-city {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.input-city:checked ~ .index-city {
+    display: block;
+}
+
+.input-city {
+    display: none;
+}
+
+@media (max-width: 1550px) {
+    .information {
+        height: 380px;
+    }
+
+    .index-main {
+        height: 750px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .label-city div {
+        width: 200px;
+    }
+
+    .index-city {
+        margin-top: 100px;
+    }
+
+    .information {
+        height: 500px;
+    }
+
+    .index-main {
+        height: 850px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .label-city div {
+        width: 150px;
+    }
+
+    .information {
+        height: 600px;
+    }
+
+    .index-main {
+        height: 950px;
+    }
+}
+
+@media (max-width: 860px) {
+    .index-city {
+        margin-top: 130px;
+    }
+    
+    .index-main {
+        width: 65%;
+    }
+
+    .information {
+        height: 800px;
+    }
+
+    .index-main {
+        height: 1150px;
+    }
+}
+
+@media (max-width: 730px) {
+    .information {
+        height: 900px;
+    }
+
+    .index-main {
+        height: 1250px;
+    }
+}
+
+@media (max-width: 660px) {
+    .label-city div {
+        width: 100px;
+    }
+
+    .information {
+        height: 1100px;
+    }
+
+    .index-main {
+        height: 1450px;
+    }
+    .index-city {
+        margin-top: 230px;
+    }
 }
